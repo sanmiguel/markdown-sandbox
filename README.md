@@ -36,4 +36,9 @@ A repository to experiment with how various markdown format edge-cases are rende
         ```erlang
         error_logger:info_msg("This should be indented OK~n", []).
         ```
+    * Code sample, empty line, same indentation [is taken as belonging to the parent list item]
+
+    ```erlang
+    error_logger:info_msg("This indentation belongs to the apparent parent~n", []).
+    ```
 * More list items
