@@ -14,13 +14,17 @@ A repository to experiment with how various markdown format edge-cases are rende
 
 * Lists Can contain
     * Sub-lists
-    * Code samples
+    * Code sample, empty line, same indentation [is taken as belonging to the parent list item]
+
+    ```erlang
+    error_logger:info_msg("This indentation belongs to the apparent parent~n", []).
+    ```
+    * Code sample, empty line, indented
 
         ```http
         POST /api/foo/var HTTP/1.1
         Content-Type: application/x-www-form-urlencoded
         ```
-
         Continuation of list item can go here.
 
         You can even add more code samples:
@@ -36,9 +40,5 @@ A repository to experiment with how various markdown format edge-cases are rende
         ```erlang
         error_logger:info_msg("This should be indented OK~n", []).
         ```
-    * Code sample, empty line, same indentation [is taken as belonging to the parent list item]
-
-    ```erlang
-    error_logger:info_msg("This indentation belongs to the apparent parent~n", []).
     ```
 * More list items
