@@ -16,7 +16,7 @@ A repository to experiment with how various markdown format edge-cases are rende
     * Sub-lists
     * Code samples
 
-    ```html
+    ```http
     POST /api/foo/var HTTP/1.1
     Content-Type: application/x-www-form-urlencoded
     ```
