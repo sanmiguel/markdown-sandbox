@@ -20,4 +20,11 @@ A repository to experiment with how various markdown format edge-cases are rende
         POST /api/foo/var HTTP/1.1
         Content-Type: application/x-www-form-urlencoded
         ```
+
+        Continuation of list item can go here.
+
+        You can even add more code samples:
+        ```erlang
+        foo:bar(Baz).
+        ```
 * More list items
