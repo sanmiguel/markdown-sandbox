@@ -27,4 +27,8 @@ A repository to experiment with how various markdown format edge-cases are rende
         ```erlang
         foo:bar(Baz).
         ```
+    * Code samples in list items require a clean line before?
+    ```erlang
+    true.
+    ```
 * More list items
