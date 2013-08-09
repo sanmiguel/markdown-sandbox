@@ -19,6 +19,7 @@ A repository to experiment with how various markdown format edge-cases are rende
     ```erlang
     error_logger:info_msg("This indentation belongs to the apparent parent~n", []).
     ```
+
     * Code sample, empty line, indented
 
         ```http
@@ -40,6 +41,7 @@ A repository to experiment with how various markdown format edge-cases are rende
         ```erlang
         error_logger:info_msg("This should be indented OK~n", []).
         ```
+
     * Sub-sublists
         * Code sample, empty line, same indentation [is taken as belonging to the parent list item]
 
