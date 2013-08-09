@@ -35,19 +35,6 @@ A repository to experiment with how various markdown format edge-cases are rende
         foo:bar(Baz).
         ```
 
-    * Code samples with no empty line and at same indent as list item render the same as
-    code samples with an empty line indented more.
-
-    ```erlang
-    false.
-    ```
-
-    * Code sample, no empty line, extra indentation
-
-        ```erlang
-        error_logger:info_msg("This should be indented OK~n", []).
-        ```
-
     * Sub-sublists
         * Code sample, empty line, same indentation [is taken as belonging to the parent list item]
 
@@ -68,19 +55,6 @@ A repository to experiment with how various markdown format edge-cases are rende
 
             ```erlang
             foo:bar(Baz).
-            ```
-
-        * Code samples with no empty line and at same indent as list item render the same as
-        code samples with an empty line indented more.
-
-        ```erlang
-        false.
-        ```
-
-        * Code sample, no empty line, extra indentation
-
-            ```erlang
-            error_logger:info_msg("This should be indented OK~n", []).
             ```
 
 * More list items
