@@ -41,4 +41,32 @@ A repository to experiment with how various markdown format edge-cases are rende
         error_logger:info_msg("This should be indented OK~n", []).
         ```
     ```
+    * Sub-sublists
+        * Code sample, empty line, same indentation [is taken as belonging to the parent list item]
+
+        ```erlang
+        error_logger:info_msg("This indentation belongs to the apparent parent~n", []).
+        ```
+        * Code sample, empty line, indented
+
+            ```http
+            POST /api/foo/var HTTP/1.1
+            Content-Type: application/x-www-form-urlencoded
+            ```
+            Continuation of list item can go here.
+
+            You can even add more code samples:
+            ```erlang
+            foo:bar(Baz).
+            ```
+        * Code samples with no empty line and at same indent as list item render the same as
+        code samples with an empty line indented more.
+        ```erlang
+        false.
+        ```
+        * Code sample, no empty line, extra indentation
+            ```erlang
+            error_logger:info_msg("This should be indented OK~n", []).
+            ```
+        ```
 * More list items
